@@ -7,7 +7,7 @@ loadUsers();
 },[]);
 const loadUsers = async ()=>{
 const result = await axios.get("http://localhost:3003/users");
-console.log(result);
+setUser(result.data)
 };
 return (
 <div className="container">
