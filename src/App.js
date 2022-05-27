@@ -6,7 +6,7 @@ import Contact from './components/pages/Contact'
 import Navbar from './components/Layout/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NotFound from "./components/pages/NotFound";
-import AddUser from "./Users/AddUser";
+import {AddUser} from "./Users/AddUser";
 function App() {
   return (
     <Router>
