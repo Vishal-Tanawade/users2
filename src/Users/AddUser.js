@@ -33,6 +33,7 @@ placeholder="Enter your Name"
 name="name"
 value={name}
 onChange={(e) => onInputChange(e)}
+required
 />
 </div>
 <div className="form-group">
@@ -43,6 +44,7 @@ placeholder="Enter your Username"
 name="username"
 value={username}
 onChange={(e) => onInputChange(e)}
+required
 />
 </div>
 <div className="form-group">
@@ -53,6 +55,7 @@ placeholder="Enter your E-mail Address"
 name="email"
 value={email}
 onChange={(e) => onInputChange(e)}
+required
 />
 </div>
 <div className="form-group">
@@ -63,6 +66,7 @@ placeholder="Enter your Phone Number"
 name="phone"
 value={phone}
 onChange={(e) => onInputChange(e)}
+required
 />
 </div>
 <div className="form-group">
@@ -73,6 +77,7 @@ placeholder="Enter your Website Name"
 name="website"
 value={website}
 onChange={(e) => onInputChange(e)}
+required
 />
 </div>
 <button className="btn btn-primary btn-block">Add User</button>
