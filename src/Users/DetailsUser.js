@@ -15,7 +15,9 @@ useEffect(() => {
 loadUser();
 }, []);
 const loadUser = async () => {
-const result = await axios.get(`http://localhost:3003/users/${id}`);
+   
+//const result = await axios.get(`http://localhost:3003/users/${id}`);
+const result = await axios.get(` http://localhost:1907/api/Users/${id}`);
 setUser(result.data);
 };
 return (

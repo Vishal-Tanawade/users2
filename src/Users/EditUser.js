@@ -21,11 +21,14 @@ loadUser();
 },[]);
 const onSubmit = async e =>{
 e.preventDefault();
-await axios.put(`http://localhost:3003/users/${id}`,user);
+
+//await axios.put(`http://localhost:3003/users/${id}`,user);
+await axios.put(`http://localhost:1907/api/Users/${id}`,user);
 history.push("/");
 }
 const loadUser = async()=>{
-const result = await axios.get(`http://localhost:3003/users/${id}`)
+//const result = await axios.get(`http://localhost:3003/users/${id}`)
+const result = await axios.get(`http://localhost:1907/api/Users/${id}`)
 setUser(result.data);
 }
 return (

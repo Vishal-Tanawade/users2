@@ -17,7 +17,8 @@ setUser({ ...user, [e.target.name]: e.target.value });
 };
 const onSubmit = async e =>{
     e.preventDefault();
-await axios.post("http://localhost:3003/users",user);
+//await axios.post("http://localhost:3003/users",user);
+await axios.post("http://localhost:1907/api/Users",user);
 history.push("/");
 }
 return (
